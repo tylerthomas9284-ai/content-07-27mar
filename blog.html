@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Articles — Meridian Insights</title>
+  <meta name="description" content="Browse all expert-led articles on business strategy, leadership, finance, and emerging technology from Meridian Insights." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="cookie-bar">
+  <p>We use cookies to enhance your experience. By continuing, you agree to our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+  <div class="cookie-btns">
+    <button class="btn-cookie-accept" id="cookie-accept">Accept All</button>
+    <button class="btn-cookie-decline" id="cookie-decline">Decline</button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-name">Meridian</span>
+    <span class="nav-logo-tag">Insights &amp; Strategy</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Get In Touch</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="terms.html">Terms &amp; Conditions</a>
+  <a href="disclaimer.html">Disclaimer</a>
+</nav>
+
+<div class="page-body">
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-label">The Meridian Archive</p>
+      <h1>Ideas That Drive Decisions</h1>
+      <p>Expert analysis on strategy, leadership, finance, and technology — researched, verified, and written for professionals who lead at the highest level.</p>
+      <div class="page-hero-line"></div>
+    </div>
+  </div>
+
+  <!-- Filter bar -->
+  <div style="background:var(--white);border-bottom:1px solid var(--border);padding:16px 48px;display:flex;gap:12px;overflow-x:auto;">
+    <button onclick="filterCards('all')" class="sidebar-topic" style="white-space:nowrap;background:var(--ink);color:var(--white);border-color:var(--ink);" id="filter-all">All Topics</button>
+    <button onclick="filterCards('strategy')" class="sidebar-topic" style="white-space:nowrap;" id="filter-strategy">Strategy</button>
+    <button onclick="filterCards('finance')" class="sidebar-topic" style="white-space:nowrap;" id="filter-finance">Finance</button>
+    <button onclick="filterCards('leadership')" class="sidebar-topic" style="white-space:nowrap;" id="filter-leadership">Leadership</button>
+    <button onclick="filterCards('operations')" class="sidebar-topic" style="white-space:nowrap;" id="filter-operations">Operations</button>
+    <button onclick="filterCards('digital')" class="sidebar-topic" style="white-space:nowrap;" id="filter-digital">Digital</button>
+  </div>
+
+  <section class="blog-list-section">
+    <div class="blog-list-grid" id="blog-list-grid">
+
+      <a href="blog-1.html" class="blog-list-card" data-cat="strategy">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80" alt="AI Corporate Strategy" />
+        </div>
+        <div class="blog-list-card-body">
+          <p class="blog-card-cat">Strategy &amp; Technology</p>
+          <h2 class="blog-card-title">How Artificial Intelligence Is Quietly Reshaping Corporate Strategy in 2025</h2>
+          <p class="blog-card-excerpt">From boardroom decisions to supply chain optimisation, AI is no longer a future promise — it is the operating system of modern enterprise leadership. Companies that fail to integrate AI into their core strategic processes risk falling behind at an accelerating rate.</p>
+          <p class="blog-card-meta" style="margin-bottom:16px;">
+            <span>Dr. Elena Markov</span>
+            <span class="meta-dot"></span>
+            <span>June 12, 2025</span>
+            <span class="meta-dot"></span>
+            <span>9 min read</span>
+          </p>
+          <span class="read-more">Read Article <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a href="blog-2.html" class="blog-list-card" data-cat="finance">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="ESG Compliance" />
+        </div>
+        <div class="blog-list-card-body">
+          <p class="blog-card-cat">Finance &amp; Compliance</p>
+          <h2 class="blog-card-title">The ESG Compliance Reckoning Every CFO Must Prepare For</h2>
+          <p class="blog-card-excerpt">New regulations tightening across EU and US markets are forcing finance leaders to build sustainability reporting into core operations. The firms that treat ESG as a box-ticking exercise are discovering, often painfully, that regulators and investors expect far more.</p>
+          <p class="blog-card-meta" style="margin-bottom:16px;">
+            <span>Marcus Chen</span>
+            <span class="meta-dot"></span>
+            <span>May 28, 2025</span>
+            <span class="meta-dot"></span>
+            <span>8 min read</span>
+          </p>
+          <span class="read-more">Read Article <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a href="blog-3.html" class="blog-list-card" data-cat="leadership">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=800&q=80" alt="Leadership" />
+        </div>
+        <div class="blog-list-card-body">
+          <p class="blog-card-cat">Leadership</p>
+          <h2 class="blog-card-title">Adaptive Leadership in an Age of Continuous Disruption</h2>
+          <p class="blog-card-excerpt">The most effective executives today share one defining trait: the capacity to remain decisive under radical uncertainty. This isn't innate — it's a discipline that can be learned, structured, and scaled across an organisation.</p>
+          <p class="blog-card-meta" style="margin-bottom:16px;">
+            <span>Sarah Okonkwo</span>
+            <span class="meta-dot"></span>
+            <span>May 14, 2025</span>
+            <span class="meta-dot"></span>
+            <span>10 min read</span>
+          </p>
+          <span class="read-more">Read Article <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a href="blog-4.html" class="blog-list-card" data-cat="operations">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Supply Chain" />
+        </div>
+        <div class="blog-list-card-body">
+          <p class="blog-card-cat">Operations &amp; Supply Chain</p>
+          <h2 class="blog-card-title">Building Resilient Supply Chains in a Fractured Geopolitical Landscape</h2>
+          <p class="blog-card-excerpt">Nearshoring, redundancy planning, and supplier diversification are no longer optional — they are survival strategies for global enterprises. The disruptions of the last three years have rewritten the rulebook entirely.</p>
+          <p class="blog-card-meta" style="margin-bottom:16px;">
+            <span>Thomas Brennan</span>
+            <span class="meta-dot"></span>
+            <span>Apr 30, 2025</span>
+            <span class="meta-dot"></span>
+            <span>7 min read</span>
+          </p>
+          <span class="read-more">Read Article <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a href="blog-5.html" class="blog-list-card" data-cat="digital" style="grid-column:1/-1;max-width:600px;">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=800&q=80" alt="Digital Transformation" />
+        </div>
+        <div class="blog-list-card-body">
+          <p class="blog-card-cat">Digital Transformation</p>
+          <h2 class="blog-card-title">Why Most Digital Transformation Programmes Still Fail — And What Actually Works</h2>
+          <p class="blog-card-excerpt">Despite billions spent globally, the failure rate of enterprise digital transformation remains stubbornly above 70%. This isn't a technology problem — it's a culture and governance problem, and the fix requires a fundamentally different model.</p>
+          <p class="blog-card-meta" style="margin-bottom:16px;">
+            <span>Priya Nair</span>
+            <span class="meta-dot"></span>
+            <span>Apr 15, 2025</span>
+            <span class="meta-dot"></span>
+            <span>11 min read</span>
+          </p>
+          <span class="read-more">Read Article <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Meridian</div>
+      <div class="footer-brand-tag">Insights &amp; Strategy</div>
+      <p class="footer-desc">Independent corporate intelligence for executives, strategists, and analysts across global industries. Est. 2018.</p>
+    </div>
+    <div>
+      <p class="footer-col-title">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Legal</p>
+      <ul class="footer-links">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <ul class="footer-links">
+        <li><a href="mailto:hello@meridianinsights.com">hello@meridianinsights.com</a></li>
+        <li><a href="tel:+442071234567">+44 207 123 4567</a></li>
+        <li style="color:#555;font-size:0.78rem;line-height:1.7;font-weight:300;">12 Canary Wharf Tower<br>London, E14 5AB, UK</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Meridian Insights Ltd. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function filterCards(cat) {
+  const cards = document.querySelectorAll('.blog-list-card');
+  cards.forEach(c => {
+    if (cat === 'all' || c.dataset.cat === cat) {
+      c.style.display = '';
+    } else {
+      c.style.display = 'none';
+    }
+  });
+  document.querySelectorAll('[id^="filter-"]').forEach(b => {
+    b.style.background = '';
+    b.style.color = '';
+    b.style.borderColor = '';
+  });
+  const active = document.getElementById('filter-' + cat);
+  if (active) {
+    active.style.background = 'var(--ink)';
+    active.style.color = '#fff';
+    active.style.borderColor = 'var(--ink)';
+  }
+}
+</script>
+</body>
+</html>
